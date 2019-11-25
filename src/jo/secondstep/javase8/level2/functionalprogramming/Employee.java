@@ -4,7 +4,7 @@ public class Employee {
 
 	private int id;
 
-	private String employeeName;
+	private String name;
 
 	private String city;
 
@@ -13,7 +13,7 @@ public class Employee {
 	public Employee(int id, String employeeName, String city, int age) {
 		super();
 		this.id = id;
-		this.employeeName = employeeName;
+		this.name = employeeName;
 		this.city = city;
 		this.age = age;
 	}
@@ -30,12 +30,12 @@ public class Employee {
 		this.id = id;
 	}
 
-	public String getEmployeeName() {
-		return employeeName;
+	public String getName() {
+		return name;
 	}
 
-	public void setEmployeeName(String employeeName) {
-		this.employeeName = employeeName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getCity() {
@@ -56,7 +56,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", employeeName=" + employeeName + ", city=" + city + ", age=" + age + "]";
+		return "Employee [id=" + id + ", employeeName=" + name + ", city=" + city + ", age=" + age + "]";
 	}
 	
 	@Override

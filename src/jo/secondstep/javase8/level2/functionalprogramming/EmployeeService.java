@@ -1,15 +1,46 @@
 package jo.secondstep.javase8.level2.functionalprogramming;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.function.Predicate;
 
 public class EmployeeService {
 
 	List<Employee> employees = new ArrayList<>();
+	Map<String, Employee> tasks = new HashMap<>();
+	Map<Employee, Integer> salaries = new HashMap<>();
 
 	public EmployeeService() {
 
+		initEmployees();
+
+		initTasks();
+
+		initSalaries();
+	}
+
+	private void initSalaries() {
+		salaries.put(employees.get(0), 500);
+		salaries.put(employees.get(1), 600);
+		salaries.put(employees.get(2), 650);
+		salaries.put(employees.get(3), 700);
+		salaries.put(employees.get(4), 900);
+	}
+
+	private void initTasks() {
+
+		tasks.put("SC-3424", employees.get(0));
+		tasks.put("SC-4050", employees.get(1));
+		tasks.put("SC-2222", employees.get(2));
+		tasks.put("SC-1224", employees.get(3));
+		tasks.put("SC-6688", employees.get(4));
+		tasks.put("SC-5555", null);
+	}
+
+	private void initEmployees() {
 		employees.add(new Employee(1, "Thomas Reid", "Eernegem", 37));
 		employees.add(new Employee(2, "Quentin Mcbride", "Toronto", 39));
 		employees.add(new Employee(3, "Carson Fuentes", "Pointe-aux-Trembles", 22));
@@ -110,11 +141,18 @@ public class EmployeeService {
 		employees.add(new Employee(98, "Blaze Harding", "Peralillo", 40));
 		employees.add(new Employee(99, "Abdul Coffey", "Troitsk", 26));
 		employees.add(new Employee(100, "Martin Byers", "Waiblingen", 32));
-
 	}
 
 	public List<Employee> getEmployees() {
 		return employees;
+	}
+
+	public Map<String, Employee> getTasks() {
+		return tasks;
+	}
+	
+	public Map<Employee, Integer> getSalaries() {
+		return salaries;
 	}
 
 	public List<Employee> findEmployees(Predicate<Employee> trait) {
@@ -129,10 +167,25 @@ public class EmployeeService {
 
 		return filterdEmployees;
 	}
-	
+
 	public void printEmployees(List<Employee> employees) {
 		for (Employee employee : employees) {
 			System.out.println(employee);
 		}
 	}
+
+	public void printTasks(Map<String, Employee> tasks) {
+		for (Entry<String, Employee> entry : tasks.entrySet()) {
+			System.out.printf("%s ==> %s \n", entry.getKey(),
+					entry.getValue() == null ? null : entry.getValue().getName());
+		}
+	}
+	
+	public void printSalaries(Map<Employee, Integer> salaries) {
+		for (Entry<Employee, Integer> entry : salaries.entrySet()) {
+			System.out.printf("%s ==> %s \n", entry.getKey().getName(),
+					entry.getValue() == null ? null : entry.getValue());
+		}
+	}
+
 }

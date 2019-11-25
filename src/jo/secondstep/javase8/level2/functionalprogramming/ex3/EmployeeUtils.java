@@ -9,6 +9,6 @@ public class EmployeeUtils {
 	}
 
 	public static int compareByName(Employee e1, Employee e2) {
-		return e1.getEmployeeName().compareToIgnoreCase(e2.getEmployeeName());
+		return e1.getName().compareToIgnoreCase(e2.getName());
 	}
 }
