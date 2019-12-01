@@ -1,5 +1,7 @@
 package jo.secondstep.javase8.level2.functionalprogramming.ex4;
 
+import java.util.function.Function;
+
 public class Client7 {
 	public static void main(String[] args) {
 
@@ -13,7 +15,11 @@ public class Client7 {
 		// | Function<T, R>        | 1 (T)       | R           | apply                  |
 		// +----------------------------------------------------------------------------+
 		
+		Function<String, Integer> function1 = String::length;
+		Function<String, Integer> function2 = x -> x.length();
 		
+		System.out.println(function1.apply("book"));
+		System.out.println(function2.apply("book"));
 	}
 
 }
