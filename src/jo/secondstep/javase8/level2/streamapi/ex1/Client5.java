@@ -1,7 +1,9 @@
 package jo.secondstep.javase8.level2.streamapi.ex1;
 
-import java.util.Arrays;
 import java.util.List;
+
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client5 {
 
@@ -9,12 +11,15 @@ public class Client5 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Using Common Terminal Operations
-		// findAny() and findFirst()
+		// allMatch() , anyMatch() and noneMatch()
 
-		List<String> colors = Arrays.asList("Red","Black","Blue","Green", "Orange", "Yellow", "White");
+		EmployeeService employeeService = new EmployeeService();
 		
-		colors.stream().findFirst().ifPresent(System.out::println);
-		colors.stream().findAny().ifPresent(System.out::println);
+		List<Employee> employees = employeeService.getEmployees();
+		
+		System.out.println(employees.stream().allMatch(e -> e.getAge() > 30));
+		System.out.println(employees.stream().anyMatch(e -> e.getAge() == 50));
+		System.out.println(employees.stream().noneMatch(e -> e.getAge() == 33));
 		
 	}
 }

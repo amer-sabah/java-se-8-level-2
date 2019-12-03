@@ -2,8 +2,8 @@ package jo.secondstep.javase8.level2.functionalprogramming.ex3;
 
 import java.util.List;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client {
 	public static void main(String[] args) {

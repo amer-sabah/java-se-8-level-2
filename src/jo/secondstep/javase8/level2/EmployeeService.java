@@ -1,4 +1,4 @@
-package jo.secondstep.javase8.level2.functionalprogramming;
+package jo.secondstep.javase8.level2;
 
 import java.util.ArrayList;
 import java.util.HashMap;

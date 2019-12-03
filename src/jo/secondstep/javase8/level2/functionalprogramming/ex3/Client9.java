@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client9 {
 

@@ -3,9 +3,9 @@ package jo.secondstep.javase8.level2.streamapi.ex1;
 import java.util.List;
 import java.util.Optional;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
-import jo.secondstep.javase8.level2.functionalprogramming.ex3.EmployeeUtils;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
+import jo.secondstep.javase8.level2.EmployeeUtils;
 
 public class Client3 {
 

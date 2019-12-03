@@ -2,8 +2,8 @@ package jo.secondstep.javase8.level2.streamapi.ex1;
 
 import java.util.List;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client6 {
 
@@ -11,15 +11,13 @@ public class Client6 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Using Common Terminal Operations
-		// allMatch() , anyMatch() and noneMatch()
+		// forEach()
 
 		EmployeeService employeeService = new EmployeeService();
 		
 		List<Employee> employees = employeeService.getEmployees();
 		
-		System.out.println(employees.stream().allMatch(e -> e.getAge() > 30));
-		System.out.println(employees.stream().anyMatch(e -> e.getAge() == 50));
-		System.out.println(employees.stream().noneMatch(e -> e.getAge() == 33));
+		employees.stream().forEach(System.out::println);
 		
 	}
 }

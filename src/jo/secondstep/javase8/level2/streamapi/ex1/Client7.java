@@ -1,9 +1,11 @@
 package jo.secondstep.javase8.level2.streamapi.ex1;
 
-import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.function.BinaryOperator;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client7 {
 
@@ -11,13 +13,25 @@ public class Client7 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Using Common Terminal Operations
-		// forEach()
+		// reduce()
 
 		EmployeeService employeeService = new EmployeeService();
 		
-		List<Employee> employees = employeeService.getEmployees();
+		Map<String, Employee> tasks = employeeService.getTasks();
 		
-		employees.stream().forEach(System.out::println);
+		Map<Employee, Integer> salaries = employeeService.getSalaries();
 		
+		String taskReport = tasks.keySet().stream().reduce("Tasks: \n", (t1,t2) -> t1 + t2 + "\n");
+		
+		System.out.print(taskReport);
+		
+		Optional<Integer> totalSalaries = salaries.values().stream().reduce((s1, s2) -> s1 + s2);
+		
+		totalSalaries.ifPresent(System.out::println);
+		
+		BinaryOperator<Integer> operation = (s1, s2) -> s1 + s2;
+		int totalSalariesParallel = salaries.values().stream().reduce(1500, operation, operation);
+		
+		System.out.println(totalSalariesParallel);
 	}
 }

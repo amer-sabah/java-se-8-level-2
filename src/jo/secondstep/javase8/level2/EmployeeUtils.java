@@ -1,6 +1,4 @@
-package jo.secondstep.javase8.level2.functionalprogramming.ex3;
-
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
+package jo.secondstep.javase8.level2;
 
 public class EmployeeUtils {
 

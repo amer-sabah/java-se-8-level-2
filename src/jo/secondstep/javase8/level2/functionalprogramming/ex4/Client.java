@@ -1,6 +1,6 @@
 package jo.secondstep.javase8.level2.functionalprogramming.ex4;
 
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.EmployeeService;
 
 public class Client {
 

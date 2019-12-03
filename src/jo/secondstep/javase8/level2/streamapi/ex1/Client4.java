@@ -1,11 +1,7 @@
 package jo.secondstep.javase8.level2.streamapi.ex1;
 
+import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
-import jo.secondstep.javase8.level2.functionalprogramming.ex3.EmployeeUtils;
 
 public class Client4 {
 
@@ -13,16 +9,12 @@ public class Client4 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Using Common Terminal Operations
-		// min() and max()
+		// findAny() and findFirst()
 
-		EmployeeService employeeService = new EmployeeService();
+		List<String> colors = Arrays.asList("Red","Black","Blue","Green", "Orange", "Yellow", "White");
 		
-		List<Employee> employees = employeeService.getEmployees();
+		colors.stream().findFirst().ifPresent(System.out::println);
+		colors.stream().findAny().ifPresent(System.out::println);
 		
-		Optional<Employee> youngestEmployee = employees.stream().min(EmployeeUtils::compareByAge);
-		Optional<Employee> oldestEmployee = employees.stream().max(EmployeeUtils::compareByAge);
-		
-		youngestEmployee.ifPresent(System.out::println);
-		oldestEmployee.ifPresent(System.out::println);
 	}
 }

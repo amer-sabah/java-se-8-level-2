@@ -5,8 +5,9 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-import jo.secondstep.javase8.level2.functionalprogramming.Employee;
-import jo.secondstep.javase8.level2.functionalprogramming.EmployeeService;
+import jo.secondstep.javase8.level2.Employee;
+import jo.secondstep.javase8.level2.EmployeeService;
+import jo.secondstep.javase8.level2.EmployeeUtils;
 
 public class Client2 {
 	public static void main(String[] args) {
