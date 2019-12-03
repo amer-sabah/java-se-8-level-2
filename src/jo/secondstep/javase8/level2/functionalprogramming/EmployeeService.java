@@ -28,6 +28,7 @@ public class EmployeeService {
 		salaries.put(employees.get(2), 650);
 		salaries.put(employees.get(3), 700);
 		salaries.put(employees.get(4), 900);
+		salaries.put(employees.get(5), 5000);
 	}
 
 	private void initTasks() {
