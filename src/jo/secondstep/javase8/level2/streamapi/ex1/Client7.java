@@ -21,7 +21,7 @@ public class Client7 {
 		
 		Map<Employee, Integer> salaries = employeeService.getSalaries();
 		
-		String taskReport = tasks.keySet().stream().reduce("Tasks: \n", (t1,t2) -> t1 + t2 + "\n");
+		String taskReport = tasks.keySet().stream().reduce("", (t1,t2) -> t1 + t2 + "\n");
 		
 		System.out.print(taskReport);
 		
