@@ -1,9 +1,9 @@
-package jo.secondstep.javase8.level2.streamapi.ex1;
+package jo.secondstep.javase8.level2.streamapi.ex2;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Client10 {
+public class Client2 {
 
 	public static void main(String[] args) {
 

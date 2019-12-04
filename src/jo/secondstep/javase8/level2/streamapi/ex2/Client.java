@@ -1,4 +1,4 @@
-package jo.secondstep.javase8.level2.streamapi.ex1;
+package jo.secondstep.javase8.level2.streamapi.ex2;
 
 import java.util.List;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import jo.secondstep.javase8.level2.Employee;
 import jo.secondstep.javase8.level2.EmployeeService;
 
-public class Client9 {
+public class Client {
 
 	public static void main(String[] args) {
 
