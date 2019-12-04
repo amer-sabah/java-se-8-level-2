@@ -12,6 +12,7 @@ public class EmployeeService {
 	List<Employee> employees = new ArrayList<>();
 	Map<String, Employee> tasks = new HashMap<>();
 	Map<Employee, Integer> salaries = new HashMap<>();
+	Map<Employee, String> departments = new HashMap<>();
 
 	public EmployeeService() {
 
@@ -20,6 +21,111 @@ public class EmployeeService {
 		initTasks();
 
 		initSalaries();
+		
+		initDepartments();
+	}
+	
+	private void initDepartments() {
+		departments.put(employees.get(0),"Customer Service");
+		departments.put(employees.get(1),"Legal Department");
+		departments.put(employees.get(2),"Customer Service");
+		departments.put(employees.get(3),"Tech Support");
+		departments.put(employees.get(4),"Asset Management");
+		departments.put(employees.get(5),"Asset Management");
+		departments.put(employees.get(6),"Payroll");
+		departments.put(employees.get(7),"Accounting");
+		departments.put(employees.get(8),"Accounting");
+		departments.put(employees.get(9),"Quality Assurance");
+		departments.put(employees.get(10),"Customer Relations");
+		departments.put(employees.get(11),"Asset Management");
+		departments.put(employees.get(12),"Media Relations");
+		departments.put(employees.get(13),"Asset Management");
+		departments.put(employees.get(14),"Customer Service");
+		departments.put(employees.get(15),"Media Relations");
+		departments.put(employees.get(16),"Research and Development");
+		departments.put(employees.get(17),"Sales and Marketing");
+		departments.put(employees.get(18),"Public Relations");
+		departments.put(employees.get(19),"Public Relations");
+		departments.put(employees.get(20),"Public Relations");
+		departments.put(employees.get(21),"Customer Service");
+		departments.put(employees.get(22),"Advertising");
+		departments.put(employees.get(23),"Public Relations");
+		departments.put(employees.get(24),"Asset Management");
+		departments.put(employees.get(25),"Payroll");
+		departments.put(employees.get(26),"Finances");
+		departments.put(employees.get(27),"Sales and Marketing");
+		departments.put(employees.get(28),"Customer Relations");
+		departments.put(employees.get(29),"Research and Development");
+		departments.put(employees.get(30),"Legal Department");
+		departments.put(employees.get(31),"Research and Development");
+		departments.put(employees.get(32),"Tech Support");
+		departments.put(employees.get(33),"Advertising");
+		departments.put(employees.get(34),"Media Relations");
+		departments.put(employees.get(35),"Payroll");
+		departments.put(employees.get(36),"Accounting");
+		departments.put(employees.get(37),"Finances");
+		departments.put(employees.get(38),"Finances");
+		departments.put(employees.get(39),"Finances");
+		departments.put(employees.get(40),"Customer Relations");
+		departments.put(employees.get(41),"Customer Service");
+		departments.put(employees.get(42),"Finances");
+		departments.put(employees.get(43),"Customer Relations");
+		departments.put(employees.get(44),"Research and Development");
+		departments.put(employees.get(45),"Customer Relations");
+		departments.put(employees.get(46),"Finances");
+		departments.put(employees.get(47),"Media Relations");
+		departments.put(employees.get(48),"Customer Service");
+		departments.put(employees.get(49),"Human Resources");
+		departments.put(employees.get(50),"Tech Support");
+		departments.put(employees.get(51),"Sales and Marketing");
+		departments.put(employees.get(52),"Customer Relations");
+		departments.put(employees.get(53),"Media Relations");
+		departments.put(employees.get(54),"Sales and Marketing");
+		departments.put(employees.get(55),"Human Resources");
+		departments.put(employees.get(56),"Quality Assurance");
+		departments.put(employees.get(57),"Customer Service");
+		departments.put(employees.get(58),"Customer Relations");
+		departments.put(employees.get(59),"Customer Relations");
+		departments.put(employees.get(60),"Payroll");
+		departments.put(employees.get(61),"Research and Development");
+		departments.put(employees.get(62),"Media Relations");
+		departments.put(employees.get(63),"Human Resources");
+		departments.put(employees.get(64),"Customer Service");
+		departments.put(employees.get(65),"Tech Support");
+		departments.put(employees.get(66),"Sales and Marketing");
+		departments.put(employees.get(67),"Payroll");
+		departments.put(employees.get(68),"Media Relations");
+		departments.put(employees.get(69),"Customer Service");
+		departments.put(employees.get(70),"Quality Assurance");
+		departments.put(employees.get(71),"Asset Management");
+		departments.put(employees.get(72),"Customer Service");
+		departments.put(employees.get(73),"Tech Support");
+		departments.put(employees.get(74),"Tech Support");
+		departments.put(employees.get(75),"Customer Service");
+		departments.put(employees.get(76),"Accounting");
+		departments.put(employees.get(77),"Asset Management");
+		departments.put(employees.get(78),"Human Resources");
+		departments.put(employees.get(79),"Customer Relations");
+		departments.put(employees.get(80),"Legal Department");
+		departments.put(employees.get(81),"Asset Management");
+		departments.put(employees.get(82),"Tech Support");
+		departments.put(employees.get(83),"Human Resources");
+		departments.put(employees.get(84),"Asset Management");
+		departments.put(employees.get(85),"Media Relations");
+		departments.put(employees.get(86),"Payroll");
+		departments.put(employees.get(87),"Payroll");
+		departments.put(employees.get(88),"Payroll");
+		departments.put(employees.get(89),"Public Relations");
+		departments.put(employees.get(90),"Public Relations");
+		departments.put(employees.get(91),"Advertising");
+		departments.put(employees.get(92),"Payroll");
+		departments.put(employees.get(93),"Public Relations");
+		departments.put(employees.get(94),"Tech Support");
+		departments.put(employees.get(95),"Sales and Marketing");
+		departments.put(employees.get(96),"Public Relations");
+		departments.put(employees.get(97),"Finances");
+		departments.put(employees.get(98),"Accounting");
+		departments.put(employees.get(99),"Customer Relations");
 	}
 
 	private void initSalaries() {
@@ -29,6 +135,30 @@ public class EmployeeService {
 		salaries.put(employees.get(3), 700);
 		salaries.put(employees.get(4), 900);
 		salaries.put(employees.get(5), 5000);
+		
+		salaries.put(employees.get(10), 500);
+		salaries.put(employees.get(11), 500);
+		salaries.put(employees.get(12), 500);
+		salaries.put(employees.get(13), 700);
+		salaries.put(employees.get(14), 700);
+		salaries.put(employees.get(15), 700);
+		salaries.put(employees.get(16), 800);
+		salaries.put(employees.get(17), 800);
+		salaries.put(employees.get(18), 800);
+		salaries.put(employees.get(19), 400);
+		salaries.put(employees.get(20), 400);
+		salaries.put(employees.get(21), 400);
+		salaries.put(employees.get(22), 900);
+		salaries.put(employees.get(23), 600);
+		salaries.put(employees.get(24), 400);
+		salaries.put(employees.get(25), 400);
+		salaries.put(employees.get(26), 800);
+		salaries.put(employees.get(27), 800);
+		salaries.put(employees.get(28), 900);
+		salaries.put(employees.get(29), 700);
+		salaries.put(employees.get(30), 500);
+		
+		
 	}
 
 	private void initTasks() {
@@ -154,6 +284,10 @@ public class EmployeeService {
 	
 	public Map<Employee, Integer> getSalaries() {
 		return salaries;
+	}
+	
+	public Map<Employee, String> getDepartments() {
+		return departments;
 	}
 
 	public List<Employee> findEmployees(Predicate<Employee> trait) {
