@@ -30,7 +30,7 @@ public class Client7 {
 		totalSalaries.ifPresent(System.out::println);
 		
 		BinaryOperator<Integer> operation = (s1, s2) -> s1 + s2;
-		int totalSalariesParallel = salaries.values().stream().reduce(1500, operation, operation);
+		int totalSalariesParallel = salaries.values().stream().reduce(0, operation, operation);
 		
 		System.out.println(totalSalariesParallel);
 	}
