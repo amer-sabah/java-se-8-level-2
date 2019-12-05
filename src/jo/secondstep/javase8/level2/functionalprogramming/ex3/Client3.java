@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 
 public class Client3 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -29,7 +30,7 @@ public class Client3 {
 		Predicate<String> lambda3 = s -> s.isEmpty();
 		
 		//Constructors
-		Supplier<ArrayList> methodRef4 = ArrayList::new;
-		Supplier<ArrayList> lambda4 = () -> new ArrayList();
+		Supplier<ArrayList<String>> methodRef4 = ArrayList<String>::new;
+		Supplier<ArrayList<String>> lambda4 = () -> new ArrayList<String>();
 	}
 }
