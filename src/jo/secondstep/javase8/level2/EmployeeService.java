@@ -184,10 +184,10 @@ public class EmployeeService {
 		employees.add(new Employee(10, "Griffith Tucker", "Oberhausen", 37));
 		employees.add(new Employee(11, "Richard Graham", "Laarne", 25));
 		employees.add(new Employee(12, "Dante Malone", "Gubkin", 23));
-		employees.add(new Employee(13, "Knox Bentley", "Palermo", 32));
+		employees.add(new Employee(13, "Knox Bentley", "Coinco", 32));
 		employees.add(new Employee(14, "Nolan Chang", "Sudbury", 34));
 		employees.add(new Employee(15, "Ethan Cline", "Bognor Regis", 27));
-		employees.add(new Employee(16, "Myles Morrow", "Dendermonde", 25));
+		employees.add(new Employee(16, "Myles Morrow", "Caledon", 25));
 		employees.add(new Employee(17, "Phelan Sargent", "Kinross", 27));
 		employees.add(new Employee(18, "Melvin Bishop", "Bear", 23));
 		employees.add(new Employee(19, "Paul Clements", "Loupoigne", 28));
@@ -198,7 +198,7 @@ public class EmployeeService {
 		employees.add(new Employee(24, "Chaney Allen", "Lesve", 30));
 		employees.add(new Employee(25, "Ralph Pace", "Vilna", 25));
 		employees.add(new Employee(26, "Fuller Hicks", "Hasselt", 23));
-		employees.add(new Employee(27, "Derek Tyler", "Sterling Heights", 35));
+		employees.add(new Employee(27, "Derek Tyler", "Laarne", 35));
 		employees.add(new Employee(28, "Cairo Jimenez", "Heppenheim", 32));
 		employees.add(new Employee(29, "Brandon Hunter", "Sibolga", 25));
 		employees.add(new Employee(30, "Stuart Avila", "Coinco", 37));

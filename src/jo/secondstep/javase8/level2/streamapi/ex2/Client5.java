@@ -17,6 +17,6 @@ public class Client5 {
 		
 		List<Employee> employees = employeeService.getEmployees();
 		
-		employees.stream().map(e -> e.getCity()).forEach(System.out::println);
+		employees.stream().map(e -> e.getCity()).distinct().forEach(System.out::println);
 	}
 }
