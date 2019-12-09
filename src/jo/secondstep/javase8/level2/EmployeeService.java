@@ -1,6 +1,7 @@
 package jo.secondstep.javase8.level2;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +14,7 @@ public class EmployeeService {
 	Map<String, Employee> tasks = new HashMap<>();
 	Map<Employee, Integer> salaries = new HashMap<>();
 	Map<Employee, String> departments = new HashMap<>();
+	Map<Employee, List<String>> favouriteFoodTypes = new HashMap<>();;
 
 	public EmployeeService() {
 
@@ -23,8 +25,115 @@ public class EmployeeService {
 		initSalaries();
 		
 		initDepartments();
+		
+		initFavouriteFoodTypes();
 	}
 	
+	private void initFavouriteFoodTypes() {
+		
+		favouriteFoodTypes.put(employees.get(0), Arrays.asList("soups","sandwiches","cereals"));
+		favouriteFoodTypes.put(employees.get(1), Arrays.asList("pies","noodles","salads","seafood"));
+		favouriteFoodTypes.put(employees.get(2), Arrays.asList("cereals"));
+		favouriteFoodTypes.put(employees.get(3), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(4), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(5), Arrays.asList("pies","cereals"));
+		favouriteFoodTypes.put(employees.get(6), Arrays.asList("salads","desserts","pies","noodles"));
+		favouriteFoodTypes.put(employees.get(7), Arrays.asList("pasta","salads","pies"));
+		favouriteFoodTypes.put(employees.get(8), Arrays.asList("soups"));
+		favouriteFoodTypes.put(employees.get(9), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(10), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(11), Arrays.asList("pies","salads","sandwiches","cereals"));
+		favouriteFoodTypes.put(employees.get(12), Arrays.asList("desserts"));
+		favouriteFoodTypes.put(employees.get(13), Arrays.asList("cereals"));
+		favouriteFoodTypes.put(employees.get(14), Arrays.asList("cereals"));
+		favouriteFoodTypes.put(employees.get(15), Arrays.asList("stews","sandwiches"));
+		favouriteFoodTypes.put(employees.get(16), Arrays.asList("sandwiches"));
+		favouriteFoodTypes.put(employees.get(17), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(18), Arrays.asList("stews","noodles","cereals","soups"));
+		favouriteFoodTypes.put(employees.get(19), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(20), Arrays.asList("soups","desserts","stews"));
+		favouriteFoodTypes.put(employees.get(21), Arrays.asList("pasta","desserts","cereals"));
+		favouriteFoodTypes.put(employees.get(22), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(23), Arrays.asList("pies"));
+		favouriteFoodTypes.put(employees.get(24), Arrays.asList("seafood","desserts","salads"));
+		favouriteFoodTypes.put(employees.get(25), Arrays.asList("noodles","pies","stews","desserts"));
+		favouriteFoodTypes.put(employees.get(26), Arrays.asList("soups","seafood","desserts","sandwiches"));
+		favouriteFoodTypes.put(employees.get(27), Arrays.asList("soups","pasta","pies","desserts"));
+		favouriteFoodTypes.put(employees.get(28), Arrays.asList("pasta","cereals","desserts"));
+		favouriteFoodTypes.put(employees.get(29), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(30), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(31), Arrays.asList("pasta","sandwiches","cereals","pies"));
+		favouriteFoodTypes.put(employees.get(32), Arrays.asList("cereals","stews","noodles","pies"));
+		favouriteFoodTypes.put(employees.get(33), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(34), Arrays.asList("noodles","salads","seafood"));
+		favouriteFoodTypes.put(employees.get(35), Arrays.asList("sandwiches"));
+		favouriteFoodTypes.put(employees.get(36), Arrays.asList("desserts","pasta"));
+		favouriteFoodTypes.put(employees.get(37), Arrays.asList("salads","desserts","cereals","stews"));
+		favouriteFoodTypes.put(employees.get(38), Arrays.asList("cereals"));
+		favouriteFoodTypes.put(employees.get(39), Arrays.asList("pies"));
+		favouriteFoodTypes.put(employees.get(40), Arrays.asList("noodles","seafood","desserts"));
+		favouriteFoodTypes.put(employees.get(41), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(42), Arrays.asList("stews","seafood","salads","noodles"));
+		favouriteFoodTypes.put(employees.get(43), Arrays.asList("pasta"));
+		favouriteFoodTypes.put(employees.get(44), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(45), Arrays.asList("salads","soups"));
+		favouriteFoodTypes.put(employees.get(46), Arrays.asList("pasta","stews"));
+		favouriteFoodTypes.put(employees.get(47), Arrays.asList("soups","desserts"));
+		favouriteFoodTypes.put(employees.get(48), Arrays.asList("salads","desserts","pies"));
+		favouriteFoodTypes.put(employees.get(49), Arrays.asList("soups"));
+		favouriteFoodTypes.put(employees.get(50), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(51), Arrays.asList("soups"));
+		favouriteFoodTypes.put(employees.get(52), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(53), Arrays.asList("seafood","cereals"));
+		favouriteFoodTypes.put(employees.get(54), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(55), Arrays.asList("noodles","pasta","seafood"));
+		favouriteFoodTypes.put(employees.get(56), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(57), Arrays.asList("desserts","seafood","salads","pasta"));
+		favouriteFoodTypes.put(employees.get(58), Arrays.asList("sandwiches","pies","cereals"));
+		favouriteFoodTypes.put(employees.get(59), Arrays.asList("stews","soups","noodles","salads"));
+		favouriteFoodTypes.put(employees.get(60), Arrays.asList("noodles","stews","sandwiches"));
+		favouriteFoodTypes.put(employees.get(61), Arrays.asList("stews","seafood","cereals","sandwiches"));
+		favouriteFoodTypes.put(employees.get(62), Arrays.asList("salads","seafood"));
+		favouriteFoodTypes.put(employees.get(63), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(64), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(65), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(66), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(67), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(68), Arrays.asList("noodles"));
+		favouriteFoodTypes.put(employees.get(69), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(70), Arrays.asList("noodles"));
+		favouriteFoodTypes.put(employees.get(71), Arrays.asList("desserts","seafood","soups"));
+		favouriteFoodTypes.put(employees.get(72), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(73), Arrays.asList("salads","stews"));
+		favouriteFoodTypes.put(employees.get(74), Arrays.asList("cereals","salads"));
+		favouriteFoodTypes.put(employees.get(75), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(76), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(77), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(78), Arrays.asList("cereals"));
+		favouriteFoodTypes.put(employees.get(79), Arrays.asList("pies","noodles","salads"));
+		favouriteFoodTypes.put(employees.get(80), Arrays.asList("desserts","seafood","soups"));
+		favouriteFoodTypes.put(employees.get(81), Arrays.asList("desserts","pasta","cereals"));
+		favouriteFoodTypes.put(employees.get(82), Arrays.asList("seafood"));
+		favouriteFoodTypes.put(employees.get(83), Arrays.asList("soups","stews","cereals","pasta"));
+		favouriteFoodTypes.put(employees.get(84), Arrays.asList("desserts","salads","pasta","noodles"));
+		favouriteFoodTypes.put(employees.get(85), Arrays.asList("desserts","salads","pasta"));
+		favouriteFoodTypes.put(employees.get(86), Arrays.asList("pasta"));
+		favouriteFoodTypes.put(employees.get(87), Arrays.asList("soups","salads","cereals","noodles"));
+		favouriteFoodTypes.put(employees.get(88), Arrays.asList("salads"));
+		favouriteFoodTypes.put(employees.get(89), Arrays.asList("desserts"));
+		favouriteFoodTypes.put(employees.get(90), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(91), Arrays.asList("sandwiches","salads","pies"));
+		favouriteFoodTypes.put(employees.get(92), Arrays.asList("stews","salads","cereals","pies"));
+		favouriteFoodTypes.put(employees.get(93), Arrays.asList("noodles"));
+		favouriteFoodTypes.put(employees.get(94), Arrays.asList("desserts","sandwiches"));
+		favouriteFoodTypes.put(employees.get(95), Arrays.asList());
+		favouriteFoodTypes.put(employees.get(96), Arrays.asList("noodles","stews","cereals"));
+		favouriteFoodTypes.put(employees.get(97), Arrays.asList("desserts","stews","salads","seafood"));
+		favouriteFoodTypes.put(employees.get(98), Arrays.asList("pies"));
+		favouriteFoodTypes.put(employees.get(99), Arrays.asList("seafood","salads","stews"));
+		
+	}
+
 	private void initDepartments() {
 		departments.put(employees.get(0),"Customer Service");
 		departments.put(employees.get(1),"Legal Department");
@@ -288,6 +397,10 @@ public class EmployeeService {
 	
 	public Map<Employee, String> getDepartments() {
 		return departments;
+	}
+	
+	public Map<Employee, List<String>> getFavouriteFoodTypes() {
+		return favouriteFoodTypes;
 	}
 
 	public List<Employee> findEmployees(Predicate<Employee> trait) {
