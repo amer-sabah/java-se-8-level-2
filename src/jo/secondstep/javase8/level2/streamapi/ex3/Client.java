@@ -32,20 +32,20 @@ public class Client {
 		// +--------------------------------------------------------------------+
 		//
 		// 
-		// Function parameters when mapping between types of streams
-		// +--------------------------------------------------------------------------------------------------------+
-		// | Source Stream | To Create       | To Create             | To Create            | To Create             |
-		// | Class         | Stream          | DoubleStream          | IntStream            | LongStream            |
-		// +--------------------------------------------------------------------------------------------------------+
-		// | Stream        | Function        | ToDoubleFunction      | ToIntFunction        | ToLongFunction        |       
-		// +--------------------------------------------------------------------------------------------------------+
-		// | DoubleStream  | Double	Function | DoubleUnary Operator  | DoubleToInt Function | DoubleToLong Function |       
-		// +--------------------------------------------------------------------------------------------------------+
-		// | IntStream     | IntFunction     | IntToDouble Function  | IntUnary Operator    | IntToLong	Function    |       
-		// +--------------------------------------------------------------------------------------------------------+
-		// | LongStream    | Long Function   | LongToDouble Function | LongToInt Function   | LongUnary Operator    |       
-		// +--------------------------------------------------------------------------------------------------------+
-		
+		// Function parameters when mapping between types of streams                     
+		// +----------------------------------------------------------------------------------------------------+
+		// | Source Stream | To Create      | To Create            | To Create           | To Create            |
+		// | Class         | Stream         | DoubleStream         | IntStream           | LongStream           |
+		// +----------------------------------------------------------------------------------------------------+
+		// | Stream        | Function       | ToDoubleFunction     | ToIntFunction       | ToLongFunction       |       
+		// +----------------------------------------------------------------------------------------------------+
+		// | DoubleStream  | DoubleFunction | DoubleUnaryOperator  | DoubleToIntFunction | DoubleToLongFunction |       
+		// +----------------------------------------------------------------------------------------------------+
+		// | IntStream     | IntFunction    | IntToDoubleFunction  | IntUnaryOperator    | IntToLongFunction    |       
+		// +----------------------------------------------------------------------------------------------------+
+		// | LongStream    | LongFunction   | LongToDoubleFunction | LongToIntFunction   | LongUnaryOperator    |       
+		// +----------------------------------------------------------------------------------------------------+
+		                                                                                                        
 		
 		System.out.println("----------------------- (1) ----------------------");
 		
