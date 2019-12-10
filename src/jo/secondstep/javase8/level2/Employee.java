@@ -1,6 +1,6 @@
 package jo.secondstep.javase8.level2;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 
 	private int id;
 
@@ -79,6 +79,11 @@ public class Employee {
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Employee employee) {
+		return this.age - employee.age;
 	}
 
 }
