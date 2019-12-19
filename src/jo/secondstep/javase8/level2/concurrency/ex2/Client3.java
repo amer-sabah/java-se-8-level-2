@@ -1,5 +1,6 @@
 package jo.secondstep.javase8.level2.concurrency.ex2;
 
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -65,6 +66,25 @@ public class Client3 {
 					System.out.println(">> isDone << = "+ submit.isDone());
 					
 					System.out.println(">> end (Our Thread 3) <<");
+				}
+
+			}.start();
+			
+			new Thread("Our Thread 4") {
+
+				public void run() {
+					System.out.println(">> start (Our Thread 4) <<");
+					
+					try {
+						System.out.println(">> get << = "+ submit.get());
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					} catch (ExecutionException e) {
+						e.printStackTrace();
+					}
+					
+					
+					System.out.println(">> end (Our Thread 4) <<");
 				}
 
 			}.start();
