@@ -32,8 +32,10 @@ public class Client {
 
 			System.out.println(">> end <<");
 		} finally {
-			if (service != null)
+			if (service != null) {
 				service.shutdown();
+			}
+				
 		}
 	}
 }
