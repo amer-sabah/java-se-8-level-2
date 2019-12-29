@@ -11,8 +11,8 @@ public class Client3 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Creating Threads with the ExecutorService
-		// Introducing the Single-Thread Executor
 		// Submitting Tasks
+		// Waiting for Results
 		
 		ExecutorService service = null;
 		try {
