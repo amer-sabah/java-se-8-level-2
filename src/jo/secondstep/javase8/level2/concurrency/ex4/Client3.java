@@ -9,6 +9,7 @@ public class Client3 {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Managing Concurrent Processes
+		// Applying the Fork/Join Framework
 		// Working with a RecursiveTask
 
 		Double[] weights = new Double[10];
