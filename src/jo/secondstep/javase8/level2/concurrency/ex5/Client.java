@@ -10,6 +10,10 @@ public class Client {
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Understanding Liveness
 		// Deadlock
+		// Starvation
+		// Livelock
+		// Managing Race Conditions
+		
 
 		// Create participants and resources
 		Fox foxy = new Fox();
