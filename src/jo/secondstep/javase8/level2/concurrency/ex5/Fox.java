@@ -1,8 +1,5 @@
 package jo.secondstep.javase8.level2.concurrency.ex5;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class Fox {
 	public void eatAndDrink(Food food, Water water) {
 		synchronized (food) {
