@@ -1,4 +1,4 @@
-package jo.secondstep.javase8.level2.functionalprogramming.ex5;
+package jo.secondstep.javase8.level2.streamapi.ex5;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,22 +1,21 @@
-package jo.secondstep.javase8.level2.functionalprogramming.ex5;
+package jo.secondstep.javase8.level2.streamapi.ex5;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class Client3 {
+public class Client {
 
 	public static void main(String[] args) {
 
 		// >>>>>>>>>>>>>>>>>>>>>>>> Items >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// Presenting the New Stream Methods
-		// Listing Directory Contents
+		// Walking a Directory
 
+		Path path = Paths.get("./");
 		try {
-			Path path = Paths.get("./");
-			Files.list(path).filter(p -> !Files.isDirectory(p)).map(p -> p.toAbsolutePath())
-					.forEach(System.out::println);
+			Files.walk(path).filter(p -> p.toString().endsWith(".java")).forEach(System.out::println);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
